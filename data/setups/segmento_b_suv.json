@@ -1,0 +1,240 @@
+{
+    "m": 1250.0,
+    "Iz": 1850.0,
+    "Ix": 520.0,
+    "Iy": 1700.0,
+    "Iw": 11.5,
+    "Ixz": 0.0,
+    "g": 9.81,
+    "L": 2.56,
+    "t_f": 1.54,
+    "t_r": 1.54,
+    "h_cg": 0.56,
+    "R_w": 0.315,
+    "wd_f": 0.6,
+    "lltd": 0.58,
+    "aero_balance": 0.5,
+    "rho": 1.225,
+    "S": 2.25,
+    "Cz": 0.02,
+    "Cd": 0.34,
+    "LMUX": 1.0,
+    "LMUY": 1.0,
+    "tire_file": "Road_215_60R17_Touring.tir",
+    "tire_pressure_f_bar": 2.3,
+    "tire_pressure_r_bar": 2.2,
+    "sigma_x": 0.28,
+    "sigma_y": 0.35,
+    "vehicle_type": "b_segment_suv",
+    "drivetrain_type": "fwd",
+    "diff_type": "open",
+    "brake_bias": 0.65,
+    "t_split_rear": 0.5,
+    "P_max_kw": 100.0,
+    "T_max_motor": 230.0,
+    "final_drive": 4.1,
+    "n_drivetrain": 0.94,
+    "T_brake_max_total": 4800.0,
+    "tire_thermal_mass": 16000.0,
+    "tire_h_conv": 32.0,
+    "camber_f_static": -0.5,
+    "camber_r_static": -0.8,
+    "toe_f_static": 0.0,
+    "toe_r_static": 0.15,
+    "caster_f": 4.0,
+    "kpi_f": 11.0,
+    "scrub_radius_f": 0.01,
+    "mechanical_trail_f": 0.028,
+    "spindle_offset_f": 0.04,
+    "spindle_offset_r": 0.0,
+    "steering_ratio": 15.5,
+    "steering_wheel_max_deg": 500.0,
+    "q1": 0.08,
+    "q2": 0.11,
+    "m_us_f": 42.0,
+    "m_us_r": 38.0,
+    "K_phi_f": 45000.0,
+    "K_phi_r": 32000.0,
+    "C_phi_f": 3200.0,
+    "C_phi_r": 2500.0,
+    "K_z_f": 28000.0,
+    "K_z_r": 26000.0,
+    "C_z_f": 2800.0,
+    "C_z_r": 2400.0,
+    "damper_stroke_total_mm": 180.0,
+    "damper_stroke_bump_max_m": 0.1,
+    "damper_stroke_rebound_max_m": -0.08,
+    "bumpstop_gap_f_m": 0.055,
+    "bumpstop_gap_r_m": 0.055,
+    "bumpstop_length_f_mm": 45.0,
+    "bumpstop_length_r_mm": 45.0,
+    "bumpstop_k_f": 40000.0,
+    "bumpstop_k_r": 40000.0,
+    "spring_rate_installed_f_Nmm": 30.0,
+    "spring_rate_installed_r_Nmm": 28.0,
+    "spring_preload_f_mm": 15.0,
+    "spring_preload_r_mm": 15.0,
+    "motion_ratio_f": 0.96,
+    "motion_ratio_r": 0.96,
+    "motion_ratio_arb_f": 0.65,
+    "motion_ratio_arb_r": 0.55,
+    "static_ride_height_f_m": 0.17,
+    "static_ride_height_r_m": 0.18,
+    "damper_mode": "linear",
+    "damper_valving_f": "C12/R12",
+    "damper_valving_r": "C12/R12",
+    "damper_lsc_clicks_f": 10.0,
+    "damper_hsc_turns_f": 2.0,
+    "damper_lsr_clicks_f": 10.0,
+    "damper_hsr_turns_f": 2.0,
+    "damper_lsc_clicks_r": 10.0,
+    "damper_hsc_turns_r": 2.0,
+    "damper_lsr_clicks_r": 10.0,
+    "damper_hsr_turns_r": 2.0,
+    "camber_gain_f_coeffs": [
+        0.0,
+        0.0,
+        -8.0,
+        0.0
+    ],
+    "camber_gain_r_coeffs": [
+        0.0,
+        0.0,
+        -6.0,
+        0.0
+    ],
+    "toe_gain_f_coeffs": [
+        0.0,
+        0.0,
+        0.2,
+        0.0
+    ],
+    "toe_gain_r_coeffs": [
+        0.0,
+        0.0,
+        -0.3,
+        0.0
+    ],
+    "rollcenter_f_coeffs": [
+        0.0,
+        -0.0002,
+        0.0,
+        0.08
+    ],
+    "rollcenter_r_coeffs": [
+        0.0,
+        -0.0002,
+        0.0,
+        0.11
+    ],
+    "rollcenter_lat_f_coeffs": [
+        0.0,
+        0.0,
+        0.03,
+        0.0
+    ],
+    "rollcenter_lat_r_coeffs": [
+        0.0,
+        0.0,
+        0.02,
+        0.0
+    ],
+    "anti_dive_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.2
+    ],
+    "anti_squat_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.15
+    ],
+    "anti_lift_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.1
+    ],
+    "damper_motion_ratio_f_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.96
+    ],
+    "damper_motion_ratio_r_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.96
+    ],
+    "arb_motion_ratio_f_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.65
+    ],
+    "arb_motion_ratio_r_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.55
+    ],
+    "ackermann_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        70.0
+    ],
+    "ackermann_pct": 0.7,
+    "caster_trail_f_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.028
+    ],
+    "scrub_radius_f_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.01
+    ],
+    "camber_steer_f_coeffs": [
+        0.0,
+        0.0,
+        -0.003,
+        0.0
+    ],
+    "wheel_steer_f_coeffs": [
+        0.0,
+        0.0,
+        0.06451612903225806,
+        0.0
+    ],
+    "use_aeromap": false,
+    "aeromap_Cz_coeffs": [
+        3.421,
+        6.5,
+        -4.2,
+        0.0
+    ],
+    "aeromap_Cd_coeffs": [
+        1.2,
+        1.2,
+        0.6,
+        0.0
+    ],
+    "aeromap_bal_coeffs": [
+        0.509,
+        2.1,
+        -1.8,
+        0.0
+    ],
+    "battery_capacity_kwh": 40.0,
+    "battery_voltage_nom": 400.0,
+    "regen_max_kw": 30.0,
+    "regen_efficiency": 0.7,
+    "motor_base_eff": 0.9,
+    "inverter_eff": 0.95
+}

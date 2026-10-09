@@ -1,0 +1,155 @@
+# Dynamic Target Suite — .gitignore
+# ===================================
+
+# -----------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# -----------------------------------------------------------------------
+# Virtual environment — NEVER commit the venv
+# -----------------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+
+# -----------------------------------------------------------------------
+# CasADi auto-generated C / compiled ODE library
+# -----------------------------------------------------------------------
+ode_14dof_gen.c
+.ode_14dof_gen.c
+*.dll
+*.dll.sig
+*.so
+*.obj
+*.lib
+*.exp
+*.ilk
+*.pdb
+.cache/
+
+# -----------------------------------------------------------------------
+# PyInstaller build artifacts
+# -----------------------------------------------------------------------
+dist/
+build/
+*.spec.bak
+
+# -----------------------------------------------------------------------
+# OpenMDAO problem output directories & simulation runs
+# -----------------------------------------------------------------------
+problem*_out/
+problem_out/
+_main_*_out/
+__main__*_out/
+runs/
+coloring_files/
+
+# -----------------------------------------------------------------------
+# Local compilers and tools
+# -----------------------------------------------------------------------
+tools/
+
+# -----------------------------------------------------------------------
+# Simulation run output & scratch
+# -----------------------------------------------------------------------
+scratch/
+OLD_PARAM/
+
+# -----------------------------------------------------------------------
+# Log, diff & crash files
+# -----------------------------------------------------------------------
+crash_log.txt
+*.log
+*.diff
+
+
+# -----------------------------------------------------------------------
+# Generated JSON state files (user-specific, regenerated at runtime)
+# -----------------------------------------------------------------------
+last_optimized_params.json
+optimized_params_history.json
+simulation_options.json
+ui_settings.json
+
+# -----------------------------------------------------------------------
+# One-off generated files (not source assets)
+# -----------------------------------------------------------------------
+guiggiani_stability.txt
+toc.txt
+test_7dof_plot.png
+
+# -----------------------------------------------------------------------
+# IDE & editor
+# -----------------------------------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+*.suo
+*.user
+.DS_Store
+Thumbs.db
+
+# -----------------------------------------------------------------------
+# Mathematica output (if not source)
+# -----------------------------------------------------------------------
+Mathematica_Reference/*.m~
+
+# -----------------------------------------------------------------------
+# Graphify (Local Knowledge Graph & Cache)
+# -----------------------------------------------------------------------
+graphify-out/
+
+# =======================================================================
+# SENSITIVE DATA EXCLUSIONS (PUBLIC REPO HYGIENE)
+# =======================================================================
+
+# 0. PRIVATE BACKUPS: Never commit local safety backups
+*_backup.py
+*_backup.json
+*private*
+tests_private_backup/
+
+# 1. TIRE_TIR: Keep only generic non-proprietary models (exclude TTC Hoosier data)
+data/tire_tir/*
+!data/tire_tir/Simple_Load_Dependent.tir
+!data/tire_tir/Road_215_60R17_Touring.tir
+
+# 2. TIRE_DATAS: Exclude experimental bench test telemetry
+data/tire_datas/
+
+# 3. SUSPENSION: Exclude all proprietary digitized suspension curves & CAD
+data/design_suspension/
+
+# 4. TRACKS: Exclude private/custom tracks, keep only generic FSAE competition layouts
+data/tracks/*
+!data/tracks/fsae_*
+
+# 5. SETUPS: Exclude proprietary race setups (ET-18/ET-17), keep only public mockups
+data/setups/*
+!data/setups/segmento_b_suv.json
+!data/setups/fsae_mockup.json
+setups/*
+!setups/segmento_b_suv.json
+!setups/fsae_mockup.json
+src/ui/setups/
+
+
+# 6. MOTOR & POWERTRAIN: Exclude dyno sheets if proprietary
+data/motor_curve/
+
+# 7. DOCS: Exclude confidential textbooks, TTC dynos, rules PDFs, Mathematica notebooks
+docs/documents/
+docs/Mathematica_Reference/
+docs/**/*.pdf
+docs/**/*.docx
+docs/**/*.pptx
+

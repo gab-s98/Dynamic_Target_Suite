@@ -1,0 +1,32 @@
+[MDI_HEADER]
+FILE_TYPE                ='tir'
+FILE_VERSION             = 3.0
+FILE_FORMAT              ='ASCII'
+
+[MODEL]
+FITTYP                   = 61
+TYRESIDE                 = 'LEFT'
+
+[PARAMETERS]
+FILE_TYPE                = 'tir'
+FILE_VERSION             = 3.0
+FILE_FORMAT              = 'ASCII'
+LENGTH                   = 'meter'
+FORCE                    = 'newton'
+ANGLE                    = 'radians'
+MASS                     = 6.0
+TIME                     = 'second'
+UNLOADED_RADIUS          = 0.24
+NOMPRES                  = 125000.0
+
+[LATERAL_COEFFICIENTS]
+PCY1                     = 1.4      $ Shape factor C
+PDY1                     = 1.8      $ Lateral friction Muy
+PDY2                     = -0.15    $ Variation of friction Muy with load
+PEY1                     = 0.0      $ Curvature factor E
+PEY2                     = 0.0      $ Variation of curvature E with load
+PKY1                     = -15.0    $ Maximum value of stiffness Kfy/Fznom
+PKY2                     = 2.0      $ Load at which Kfy reaches maximum value
+PKY6                     = -2.5     $ Camber stiffness Kygamma/Fz
+PVY3                     = 0.5      $ Camber force stiffness parameter
+

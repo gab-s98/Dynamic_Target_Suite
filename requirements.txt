@@ -1,0 +1,32 @@
+# Dynamic Target Suite — Python Dependencies
+# Pinning strategy: >= installed_version, < next_major (compatible release).
+
+# --- Core scientific computing ---
+numpy>=2.0,<3.0
+scipy>=1.15,<2.0
+
+# --- Symbolic math & nonlinear optimization ---
+# CasADi provides auto-diff, IPOPT solver interface, and C-code generation.
+casadi>=3.7,<4.0
+
+# --- Multidisciplinary Design Optimization framework ---
+openmdao>=3.30,<4.0
+
+# --- GUI, Visualization & 3D OpenGL Rendering ---
+matplotlib>=3.10,<4.0
+PyQt5>=5.15,<6.0
+PyQt5-sip>=12.0,<13.0
+PyOpenGL>=3.1.0
+
+# --- Real-time driving simulator (gamepad / input / audio) ---
+pygame>=2.6,<3.0
+
+# --- Data handling & telemetry ---
+pandas>=2.0,<4.0
+
+# --- Testing ---
+pytest>=8.0,<11.0
+pytest-timeout>=2.3
+
+# --- Optional / Build tools (not strictly required for source usage) ---
+# pyinstaller>=6.0,<7.0

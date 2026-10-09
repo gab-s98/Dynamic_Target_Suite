@@ -1,0 +1,237 @@
+{
+    "m": 300.0,
+    "Iz": 125.0,
+    "Iw": 1.2,
+    "Ixz": 0.0,
+    "g": 9.81,
+    "L": 1.55,
+    "t_f": 1.22,
+    "t_r": 1.2,
+    "h_cg": 0.3,
+    "R_w": 0.228,
+    "wd_f": 0.5,
+    "lltd": 0.52,
+    "aero_balance": 0.5,
+    "rho": 1.225,
+    "S": 1.139,
+    "Cz": 2.8,
+    "Cd": 1.3,
+    "LMUX": 1.0,
+    "LMUY": 1.0,
+    "sigma_x": 0.15,
+    "sigma_y": 0.22,
+    "brake_bias": 0.6,
+    "t_split_rear": 0.5,
+    "P_max_kw": 70.0,
+    "T_max_motor": 85.0,
+    "P_max_motor_kw": 45.0,
+    "motor_type": "GENERIC_ELECTRIC_POWERTRAIN",
+    "tv_kp": 450.0,
+    "tv_ki": 80.0,
+    "tv_max_delta_mz": 350.0,
+    "tv_kus": 0.0025,
+    "final_drive": 4.0,
+    "n_drivetrain": 0.95,
+    "camber_f_static": -1.5,
+    "camber_r_static": -1.0,
+    "toe_f_static": -0.000489961826504614,
+    "toe_r_static": -0.0023616707903830795,
+    "caster_f": 3.0,
+    "kpi_f": 8.2,
+    "scrub_radius_f": 0.0368,
+    "mechanical_trail_f": 0.012,
+    "steering_ratio": 5.0,
+    "steering_wheel_max_deg": 125.0,
+    "q1": 0.0463,
+    "q2": 0.07693,
+    "m_us_f": 18.0,
+    "m_us_r": 16.0,
+    "K_phi_f": 34377.0,
+    "K_phi_r": 34377.0,
+    "C_phi_f": 800.0,
+    "C_phi_r": 600.0,
+    "K_z_f": 37600.0,
+    "K_z_r": 38500.0,
+    "C_z_f": 1500.0,
+    "C_z_r": 1200.0,
+    "damper_stroke_total_mm": 57.0,
+    "damper_stroke_bump_max_m": 0.035,
+    "damper_stroke_rebound_max_m": -0.03,
+    "bumpstop_gap_f_m": 0.02,
+    "bumpstop_gap_r_m": 0.02,
+    "bumpstop_length_f_mm": 20.0,
+    "bumpstop_length_r_mm": 20.0,
+    "bumpstop_k_f": 80000.0,
+    "bumpstop_k_r": 80000.0,
+    "spring_rate_installed_f_Nmm": 59.5,
+    "spring_rate_installed_r_Nmm": 61.0,
+    "spring_preload_f_mm": 5.0,
+    "spring_preload_r_mm": 5.0,
+    "motion_ratio_f": 0.7937752855793678,
+    "motion_ratio_r": 0.7995112593898948,
+    "motion_ratio_arb_f": 0.39987742769620116,
+    "motion_ratio_arb_r": 0.4049208372333474,
+    "static_ride_height_f_m": 0.03,
+    "static_ride_height_r_m": 0.035,
+    "damper_mode": "linear",
+    "damper_valving_f": "C12/R12",
+    "damper_valving_r": "C12/R12",
+    "damper_lsc_clicks_f": 10.0,
+    "damper_hsc_turns_f": 2.0,
+    "damper_lsr_clicks_f": 10.0,
+    "damper_hsr_turns_f": 2.0,
+    "damper_lsc_clicks_r": 10.0,
+    "damper_hsc_turns_r": 2.0,
+    "damper_lsr_clicks_r": 10.0,
+    "damper_hsr_turns_r": 2.0,
+    "camber_gain_f_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "camber_gain_r_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "toe_gain_f_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "toe_gain_r_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "rollcenter_f_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.05
+    ],
+    "rollcenter_r_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.07
+    ],
+    "rollcenter_lat_f_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "rollcenter_lat_r_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "anti_dive_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.25
+    ],
+    "anti_squat_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.15
+    ],
+    "anti_lift_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "damper_motion_ratio_f_coeffs": [
+        -573.0511096024936,
+        29.007597816561955,
+        0.2658210950809155,
+        0.7937752855793678
+    ],
+    "damper_motion_ratio_r_coeffs": [
+        -226.16544633372555,
+        1.4631674416120617,
+        0.2335797981493491,
+        0.7995112593898948
+    ],
+    "arb_motion_ratio_f_coeffs": [
+        -256.913534366781,
+        16.634030855779063,
+        0.07737573652034374,
+        0.39987742769620116
+    ],
+    "arb_motion_ratio_r_coeffs": [
+        -93.32870877268877,
+        7.474693822942236,
+        0.026008543317696697,
+        0.4049208372333474
+    ],
+    "ackermann_coeffs": [
+        0.0,
+        0.001100925,
+        0.0,
+        50.985479
+    ],
+    "ackermann_pct": 0.509855,
+    "wheel_steer_f_coeffs": [
+        7.576020956688725e-07,
+        0.00014478608034752816,
+        0.18287179744166973,
+        0.0
+    ],
+    "use_aeromap": false,
+    "aeromap_Cz_coeffs": [
+        3.421,
+        6.5,
+        -4.2,
+        0.0
+    ],
+    "aeromap_Cd_coeffs": [
+        1.2,
+        1.2,
+        0.6,
+        0.0
+    ],
+    "aeromap_bal_coeffs": [
+        0.485,
+        2.1,
+        -1.8,
+        0.0
+    ],
+    "battery_capacity_kwh": 6.8,
+    "battery_voltage_nom": 400.0,
+    "regen_max_kw": 40.0,
+    "regen_efficiency": 0.65,
+    "motor_base_eff": 0.92,
+    "inverter_eff": 0.96,
+    "caster_trail_f_coeffs": [
+        4.272503084352401e-09,
+        2.1066989615491302e-07,
+        2.327500391183015e-05,
+        0.012475224023421544
+    ],
+    "scrub_radius_f_coeffs": [
+        9.005950678768987e-10,
+        8.01297474384552e-09,
+        -1.391521410647867e-05,
+        0.03706665688705429
+    ],
+    "camber_steer_f_coeffs": [
+        1.1589538107294133e-06,
+        6.917656092928726e-05,
+        -0.006298100069756528,
+        0.0
+    ],
+    "vehicle_name": "FSAE Generic Mockup",
+    "Ix": 38.0,
+    "Iy": 115.0,
+    "tire_file": "Simple_Load_Dependent.tir"
+}
