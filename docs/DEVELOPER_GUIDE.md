@@ -584,7 +584,7 @@ Come warm-start per l'NLP e per valutazioni di telemetria istantanee (<5 ms), il
 Per eliminare accoppiamenti rigidi e dipendenze circolari con il modulo del simulatore, l'interfaccia di Direct Collocation è strutturata in un componente autonomo e riutilizzabile:
 - **Disaccoppiamento Canvas**:
   - `CollocationTrajectoryCanvas`: Canvas Matplotlib dedicato esclusivamente al rendering di traiettoria e controlli con 4 sotto-grafici sincroni (Racing Line vs Mezzeria con limiti nastro d'asfalto, Profilo di velocità $v(s)$ con confronto quasi-statico vs ottimo IPOPT, Inviluppo Controlli $a_x(s)$ e $\delta(s)$, Ellisse d'Aderenza normalizzata $a_x/(\mu g)$ vs $a_y/(\mu g)$).
-- **Simulink Data Inspector Multi-Canale (`DataInspectorCanvas`)**:
+- **Telemetry Data Inspector Multi-Canale (`DataInspectorCanvas`)**:
   - Layout griglia flessibile a selezione dinamica: **1x1 (Singolo)**, **2x1 (Doppio)**, **3x1 (Triplo)** e **2x2 (Quadruplo)**.
   - Canali fisici selezionabili tramite checkbox: coordinate globali ($x, y$), velocità $v$, accelerazione tangenziale $a_x$, angolo di sterzo $\delta$, scostamento laterale $n$, orientamento relativo $\xi$, curvatura mezzeria $\kappa$, tempo progressivo $t$, accelerazione centripeta $a_y$, e canali derivati calcolati al volo (accelerazione totale $a_{tot} = \sqrt{a_x^2 + a_y^2}$, delta velocità $\Delta v = v - v_{\text{midpoint}}$, velocità d'imbardata geometrica $\dot{\psi} = v (\kappa + \dot{\xi})$, potenza longitudinale $P_{long} = m a_x v$).
   - Asse X commutabile in tempo reale tra ascissa curvilinea $s$ [m] e tempo sul giro $t$ [s].

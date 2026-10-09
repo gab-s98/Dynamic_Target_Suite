@@ -27,8 +27,14 @@ def export_public_repo(dest_path: Path):
     print("=" * 70)
 
     if dest_root.exists():
-        print(f"[!] Warning: Destination already exists. Cleaning up {dest_root}...")
-        shutil.rmtree(dest_root)
+        print(f"[!] Warning: Destination already exists. Cleaning up {dest_root} (preserving .git and .gitignore)...")
+        for item in dest_root.iterdir():
+            if item.name in [".git", ".gitignore"]:
+                continue
+            if item.is_dir():
+                shutil.rmtree(item)
+            else:
+                item.unlink()
 
     dest_root.mkdir(parents=True, exist_ok=True)
 
@@ -37,7 +43,7 @@ def export_public_repo(dest_path: Path):
 
     def copy_file(src_file: Path, rel_target: str):
         nonlocal copied_files_count, total_bytes
-        if not src_file.is_file():
+        if not src_file.is_file() or rel_target == ".gitignore":
             return
         dst_file = dest_root / rel_target
         dst_file.parent.mkdir(parents=True, exist_ok=True)
@@ -53,7 +59,6 @@ def export_public_repo(dest_path: Path):
         "README.md",
         "LICENSE",
         "MDO_Target_Suite.spec",
-        ".gitignore",
         "build_exe.bat",
         "AGENTS.md",
         "GEMINI.md",

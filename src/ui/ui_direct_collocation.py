@@ -8,7 +8,7 @@ Caratteristiche:
 - CollocationTrajectoryCanvas: Canvas Matplotlib disaccoppiato dal simulatore per la
   panoramica ingegneristica standard (Tracciato 2D & Racing Line, Velocita vs Profiler,
   Accelerazioni ax/ay, Scostamento laterale n(s) & Angolo sterzo).
-- DataInspectorCanvas: Strumento stile Simulink Data Inspector per la selezione libera
+- DataInspectorCanvas: Strumento avanzato Telemetry Data Inspector per la selezione libera
   e personalizzata dei canali di telemetria, configurazione multi-plot (1x1, 2x1, 3x1, 2x2),
   cursori interattivi sincronizzati e switch asse X (Progressione s [m] o Tempo t [s]).
 - TrackConfigPanel: Sezione dedicata alla selezione tracciato da preset ufficiali FSAE
@@ -222,11 +222,11 @@ class CollocationTrajectoryCanvas(FigureCanvas):
 
 
 # =============================================================================
-# 2. DATA INSPECTOR CANVAS - STILE SIMULINK DATA INSPECTOR
+# 2. DATA INSPECTOR CANVAS - TELEMETRY DATA INSPECTOR
 # =============================================================================
 class DataInspectorCanvas(FigureCanvas):
     """
-    Canvas configurabile stile Simulink Data Inspector.
+    Canvas configurabile Telemetry Data Inspector.
     Consente la selezione libera di canali di telemetria, configurazione
     del numero di grafici (1x1, 2x1, 3x1, 2x2) e cursori sincronizzati.
     """
@@ -612,7 +612,7 @@ class DirectCollocationDialog(QDialog):
     """
     Finestra professionale per Ottimizzazione di Traiettoria & Racing Line OCP.
     Eredita rigorosamente il tema dell'applicazione, include selettore di tracciato,
-    canvas 4-subplot isolato e Simulink Data Inspector.
+    canvas 4-subplot isolato e Telemetry Data Inspector.
     """
     def __init__(self, parent=None, vehicle_params=None, tir_file=None, theme_name="dark", density="standard"):
         super().__init__(parent)
@@ -623,7 +623,7 @@ class DirectCollocationDialog(QDialog):
         self.last_colloc_res: Optional[Dict[str, Any]] = None
         self.active_worker: Optional[CollocationWorker] = None
 
-        self.setWindowTitle("Direct Collocation: Ottimizzazione Traiettoria & Simulink Data Inspector")
+        self.setWindowTitle("Direct Collocation: Ottimizzazione Traiettoria & Telemetry Data Inspector")
         self.resize(1280, 840)
         self.setStyleSheet(get_stylesheet(self.theme_name, self.density))
         apply_app_palette(self, self.theme_name)
@@ -744,12 +744,12 @@ class DirectCollocationDialog(QDialog):
         ov_layout.addWidget(self.canvas_overview)
         self.view_tabs.addTab(w_overview, "Panoramica 4 Subplot (Standard)")
 
-        # Tab 2: Simulink Data Inspector
+        # Tab 2: Telemetry Data Inspector
         w_inspector = QWidget()
         insp_layout = QVBoxLayout(w_inspector)
         insp_layout.addWidget(self.tb_inspector)
         insp_layout.addWidget(self.canvas_inspector)
-        self.view_tabs.addTab(w_inspector, "Simulink Data Inspector")
+        self.view_tabs.addTab(w_inspector, "Telemetry Data Inspector")
 
         # Tab 3: Telemetry Data Table
         self.telemetry_table = QTableWidget()
@@ -768,7 +768,7 @@ class DirectCollocationDialog(QDialog):
             self.canvas_overview.plot_track_preview(curr_track)
 
     def _build_inspector_controls(self) -> QWidget:
-        """Costruisce il widget dei controlli di selezione canali stile Simulink Data Inspector."""
+        """Costruisce il widget dei controlli di selezione canali Telemetry Data Inspector."""
         t = get_theme_palette(self.theme_name)
         w = QWidget()
         layout = QVBoxLayout(w)

@@ -3,7 +3,7 @@ test_collocation_ui_and_live_inspector.py
 -----------------------------------------
 Unit tests verifying:
 1. Decoupled CollocationTrajectoryCanvas and TrackConfigPanel.
-2. Simulink Data Inspector multi-plot canvas with channel selection and derived channels.
+2. Telemetry Data Inspector multi-plot canvas with channel selection and derived channels.
 3. DirectCollocationDialog headless initialization and UI components.
 4. LiveVehicleParametersInspector non-modal floating window, live tuning, and telemetry streaming.
 5. First-person camera smoothing and altimetric damping logic in OpenGLViewport3D.
@@ -86,7 +86,7 @@ class TestCollocationUIAndInspector(unittest.TestCase):
         canvas.apply_theme("light")
         self.assertEqual(canvas.theme_name, "light")
 
-    def test_simulink_data_inspector_canvas(self):
+    def test_telemetry_data_inspector_canvas(self):
         """Verifies DataInspectorCanvas multi-plot, channel filtering, and derived channels."""
         canvas = DataInspectorCanvas(theme_name="dark")
         self.assertEqual(canvas.layout_mode, "2x1")

@@ -6,10 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.10.0] — 2026-10-08
 
-### Added & Refactored (Direct Collocation UI, Simulink Data Inspector & Simulator Camera Smoothing / Live-Tuning)
+### Added & Refactored (Direct Collocation UI, Telemetry Data Inspector & Simulator Camera Smoothing / Live-Tuning)
 - **Modulo Direct Collocation: Disaccoppiamento Canvas & Allineamento UI (`src/ui/ui_direct_collocation.py`)**:
   - *Disaccoppiamento Canvas*: Eliminato l'accoppiamento con il simulatore e le relative dipendenze circolari; introdotta la classe `CollocationTrajectoryCanvas` con 4 sotto-grafici sincroni (Racing Line vs Mezzeria, Profilo di velocità $v(s)$ con confronto quasi-statico vs ottimo IPOPT, Inviluppo Controlli $a_x(s)$ e $\delta(s)$, ed Ellisse d'Aderenza normalizzata).
-  - *Simulink Data Inspector Multi-Canale (`DataInspectorCanvas`)*:
+  - *Telemetry Data Inspector Multi-Canale (`DataInspectorCanvas`)*:
     - Layout multi-grafico liberamente configurabile: 1x1, 2x1, 3x1 e 2x2.
     - Selezione dinamica dei canali con oltre 14 tracce fisiche e canali derivati calcolati al volo ($a_{tot}$, $\Delta v$, $\dot{\psi}$, $P_{long}$).
     - Cursori verticali sincronizzati (*crosshair*) su tutti i subplot al movimento del mouse con readout numerico istantaneo.
